@@ -256,13 +256,13 @@ func GetJenkinsTestInstance(name string, namespace string) *v1alpha2.Jenkins {
 		},
 		Spec: v1alpha2.JenkinsSpec{
 			ConfigurationAsCode: &v1alpha2.Configuration{
-				Enabled:       true,
-				DefaultConfig: true,
+				Enabled:       false,
+				DefaultConfig: false,
 			},
 			PersistentSpec: v1alpha2.JenkinsPersistentSpec{
-				Enabled: true,
+				Enabled: false,
 			},
-			BackupEnabled: true,
+			BackupEnabled: false,
 			// MetricsEnabled: true,
 		},
 	}
